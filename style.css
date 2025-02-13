@@ -70,7 +70,7 @@ p {
 }
 
 .navbar .navbar-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--white);
 }
 
@@ -136,7 +136,7 @@ p {
 }
 
 .content-heading {
-    width: 55%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -175,6 +175,7 @@ p {
     margin-bottom: 1.5rem;
     mix-blend-mode: difference;
     font-weight: 200;
+    color: var(--white);
 }
 
 form {
@@ -324,10 +325,6 @@ form .input-group input {
         width: 25%;
     }
 
-    .content-heading {
-        width: 100%;
-    }
-
     .content-heading h2 {
         font-size: 3rem;
     }
@@ -340,17 +337,16 @@ form .input-group input {
         width: 100%;
     }
 
-    .content h3 {
-        font-size: 2.1rem;
-        line-height: 1;
-    }
-
     .display-block-768 {
         display: block;
     }
 
     .flex-direction-column-768 {
         flex-direction: column;
+    }
+
+    .height-240px-768 {
+        height: 240px;
     }
 }
 
@@ -378,12 +374,11 @@ form .input-group input {
     }
 
     .navbar .navbar-text {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .content h3 {
-        font-size: 2.4rem;
-        line-height: 1;
+        font-size: 2.1rem;
     }
 
     .flex-direction-column-480 {
