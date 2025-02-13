@@ -177,8 +177,9 @@ p {
     color: var(--white);
 }
 
-.content p {
-    font-weight: 500;
+.hero p {
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
 form {
