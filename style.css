@@ -235,10 +235,6 @@ form .input-group input {
     border-top: 1px solid var(--primary-dark);
 }
 
-.border-bottom-primary {
-    border-bottom: 1px solid var(--primary-dark);
-}
-
 .border-radius-0-5rem {
     border-radius: 0.5rem;
 }
