@@ -171,11 +171,14 @@ p {
 
 .content-heading p,
 .content p {
-    color: var(--white);
     margin-bottom: 1.5rem;
     mix-blend-mode: difference;
     font-weight: 200;
     color: var(--white);
+}
+
+.content p {
+    font-weight: 500;
 }
 
 form {
