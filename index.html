@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
     <title>Warkop Murni Putra</title>
 
     <!-- font -->
@@ -20,263 +21,222 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-top navbar-responsive background-color-bg">
-        <div class="container display-flex align-items-center justify-content-space-between">
-            <a class="navbar-brand" href="#">
-                <span class="font-style-italic">warkop</span><span class="text-primary">MurniPutra.</span>
-            </a>
-            <div class="navbar-nav">
-                <a href="#home">home</a>
-                <a href="#about">tentang</a>
-                <a href="#menu">menu</a>
-                <a href="#contact">kontak</a>
-            </div>
-            <div class="navbar-extra">
-                <a href="" id="search"><i data-feather="search"></i></a>
-                <a href="" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-                <a class="display-none display-block-768" id="hamburger-menu"><i data-feather="menu"></i></a>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <header id="home" class="hero">
-            <div class="container padding-top-6rem">
-                <div class="display-flex align-items-center gap-2rem flex-direction-column-768">
-                    <div class="content">
-                        <h1>Nikmati Harimu dengan Secangkir <span class="text-primary">Kopi</span></h1>
-                        <p class="text-primary">Kopi bukan hanya minuman, melainkan teman sejati yang menemani setiap
-                            langkah dalam perjalanan hidupmu, memberikan semangat dan kehangatan di setiap tegukannya.
-                        </p>
-                        <a href="" class="btn-primary">Nikmati sekarang!</a>
-                    </div>
+    <!-- component root start -->
+    <div id="root">
+        <!-- component nav start -->
+        <nav class="navbar navbar-top navbar-responsive border-bottom-1px-primary-dark">
+            <div class="container display-flex align-items-center justify-content-between">
+                <a href="#" class="navbar-brand">
+                    <span class="font-style-italic text-color-gray">warkop</span><span
+                        class="text-color-primary">MurniPutra</span>.
+                </a>
+                <div class="navbar-nav">
+                    <a href="#home" class="nav-link">home</a>
+                    <a href="#about" class="nav-link">tentang</a>
+                    <a href="#menu" class="nav-link">menu</a>
+                    <a href="#contact" class="nav-link">kontak</a>
+                </div>
+                <div class="navbar-nav">
+                    <span id="search" class="nav-icon"><i data-feather="search"></i></span>
+                    <span id="shopping-cart" class="nav-icon"><i data-feather="shopping-cart"></i></span>
+                </div>
+                <div id="menu-icon" class="navbar-toggler">
+                    <span class="nav-icon">
+                        <i data-feather="menu"></i>
+                    </span>
                 </div>
             </div>
-        </header>
-        <section class="about" id="about">
-            <div class="container padding-top-6rem">
-                <div class="content-heading">
-                    <h2><span class="text-primary">Tentang</span> Kami</h2>
-                </div>
-                <div class="display-flex gap-2rem flex-direction-column-768">
-                    <div class="content-img">
-                        <img src="./tentang_kami_img.jpg">
-                    </div>
-                    <div class="content">
-                        <h1>Kenapa harus memilih kopi kami?</h1>
-                        <p>Di warung kopi kami, setiap cangkir yang kami sajikan adalah hasil dari perhatian penuh
-                            terhadap kualitas biji kopi dan teknik penyeduhan yang sempurna. Kami memilih biji kopi
-                            terbaik dari berbagai daerah, dengan cita rasa yang kaya dan unik. Setiap tegukan kopi di
-                            warung kami bukan hanya memberikan kenikmatan, tetapi juga pengalaman yang membawa Anda
-                            lebih dekat dengan seni meracik kopi yang sesungguhnya.</p>
-                        <p>Kami percaya bahwa kopi adalah teman sejati dalam perjalanan hidup, dan warung kami hadir
-                            untuk menemani Anda dalam setiap langkah. Entah itu pagi yang penuh semangat atau sore yang
-                            penuh refleksi, kami siap memberikan kehangatan dan semangat dalam setiap cangkir yang kami
-                            sajikan. Kami berkomitmen untuk terus memberikan pelayanan terbaik, menjaga kualitas, dan
-                            menciptakan pengalaman yang membuat Anda merasa seperti di rumah.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="menu" id="menu">
-            <div class="container padding-top-6rem">
-                <div class="content-heading">
-                    <h2><span class="text-primary">Menu</span> Kami</h2>
-                    <p>Di warung kopi kami, kami menyajikan berbagai pilihan kopi terbaik yang dapat memanjakan lidah
-                        Anda. Dari kopi hitam yang kuat hingga berbagai varian kopi dengan sentuhan manis dan lembut,
-                        kami memiliki pilihan untuk setiap selera. Selain kopi, kami juga menawarkan aneka makanan
-                        ringan yang pas untuk menemani waktu bersantai Anda. Setiap menu kami disajikan dengan penuh
-                        perhatian, menjadikan setiap kunjungan Anda lebih berkesan.</p>
-                </div>
-                <div class="display-flex align-items-center justify-content-space-between gap-2rem">
-                    <div
-                        class="display-flex align-items-center justify-content-space-between gap-2rem flex-direction-column-768">
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Espresso-</h3>
-                                <p>IDR <span class="text-primary">15K</span></p>
-                            </div>
-                        </div>
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Latte-</h3>
-                                <p>IDR <span class="text-primary">20K</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="display-flex align-items-center justify-content-space-between gap-2rem flex-direction-column-480">
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Cappuccino-</h3>
-                                <p>IDR <span class="text-primary">18K</span></p>
-                            </div>
-                        </div>
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Mocha-</h3>
-                                <p>IDR <span class="text-primary">22K</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="display-flex align-items-center justify-content-space-between gap-2rem">
-                    <div
-                        class="display-flex align-items-center justify-content-space-between gap-2rem flex-direction-column-480">
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Americano-</h3>
-                                <p>IDR <span class="text-primary">12K</span></p>
-                            </div>
-                        </div>
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Flat White-</h3>
-                                <p>IDR <span class="text-primary">25K</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="display-flex align-items-center justify-content-space-between gap-2rem flex-direction-column-768">
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Iced Coffee-</h3>
-                                <p>IDR <span class="text-primary">17K</span></p>
-                            </div>
-                        </div>
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Affogato-</h3>
-                                <p>IDR <span class="text-primary">30K</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="display-flex align-items-center justify-content-space-between gap-2rem">
-                    <div
-                        class="display-flex align-items-center justify-content-space-between gap-2rem flex-direction-column-768">
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Nitro Cold Brew-</h3>
-                                <p>IDR <span class="text-primary">28K</span></p>
-                            </div>
-                        </div>
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Caramel Macchiato-</h3>
-                                <p>IDR <span class="text-primary">23K</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="display-flex align-items-center justify-content-space-between gap-2rem flex-direction-column-480">
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Iced Latte-</h3>
-                                <p>IDR <span class="text-primary">20K</span></p>
-                            </div>
-                        </div>
-                        <div class="menu-card text-align-center">
-                            <div class="content-img width-100">
-                                <img src="./menu1_img.jpg" class="border-radius-0-5rem">
-                            </div>
-                            <div class="content width-100">
-                                <h3>-Macchiato-</h3>
-                                <p>IDR <span class="text-primary">16K</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </nav>
+        <!-- component nav end -->
 
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <div class="container padding-top-6rem padding-bottom-6rem">
-                <div class="content-heading">
-                    <h2><span class="text-primary">Kontak</span> Kami</h2>
-                    <p>Jika Anda memiliki pertanyaan, saran, atau ingin mengetahui lebih lanjut tentang menu kami,
-                        jangan ragu untuk menghubungi kami. Anda bisa menghubungi kami melalui telepon, email, atau
-                        datang langsung ke warung kopi kami. Kami selalu siap untuk menyambut Anda dengan tangan terbuka
-                        dan memberikan informasi yang Anda butuhkan.</p>
-                </div>
-                <div class="display-flex gap-2rem align-items-center flex-direction-column-768">
-                    <div class="content-img">
-                        <iframe class="height-240-768"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.024391523018!2d106.85333886710168!3d-6.196758898162359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f48c970ddf93%3A0xe3004ef0734219f!2sRT.12%2FRW.10%2C%20Utan%20Kayu%20Utara%2C%20Kec.%20Matraman%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1739347097077!5m2!1sid!2sid"
-                            width="100%" height="360px" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="content">
-                        <form action="">
-                            <div class="input-group">
-                                <i data-feather="user"></i>
-                                <input type="text" placeholder="name">
-                            </div>
-                            <div class="input-group">
-                                <i data-feather="mail"></i>
-                                <input type="text" placeholder="email">
-                            </div>
-                            <div class="input-group">
-                                <i data-feather="phone"></i>
-                                <input type="text" placeholder="no hp">
-                            </div>
-                            <button class="btn-primary margin-top-3rem">Kirim pesan</button>
-                        </form>
+        <!-- component main start -->
+        <main>
+            <!-- component home start -->
+            <header id="home" class="hero">
+                <div class="container padding-top-75px">
+                    <div class="row">
+                        <div class="column-45 column-100-768">
+                            <h1>Nikmati Harimu dengan Secangkir <span class="text-color-primary">Kopi</span></h1>
+                            <p>Kopi bukan hanya minuman, melainkan teman sejati yang menemani setiap
+                                langkah dalam perjalanan hidupmu, memberikan semangat dan kehangatan di setiap
+                                tegukannya.</p>
+                            <a href="" class="btn-primary">Nikmati sekarang!</a>
+                        </div>
                     </div>
                 </div>
+            </header>
+            <!-- component home end -->
+
+            <!-- component about start -->
+            <section id="about" class="about">
+                <div class="container padding-top-75px">
+                    <div class="row text-align-center">
+                        <h2>
+                            <span class="text-color-primary">Tengtang</span> <span class="text-color-gray">Kami</span>
+                        </h2>
+                    </div>
+                    <div class="row flex-direction-column-768">
+                        <div class="column-55 column-100-768">
+                            <img src="./tentang_kami_img.jpg">
+                        </div>
+                        <div class="column-45 column-100-768">
+                            <h3>Kenapa harus memilih <span class="text-color-primary">Kopi</span> kami?</h3>
+                            <p>Di warung kopi kami, setiap cangkir yang kami sajikan adalah hasil dari perhatian
+                                penuh terhadap kualitas biji kopi dan teknik penyeduhan yang sempurna. Kami
+                                memilih
+                                biji kopi terbaik dari berbagai daerah, dengan cita rasa yang kaya dan unik.
+                                Setiap
+                                tegukan kopi di warung kami bukan hanya memberikan kenikmatan, tetapi juga
+                                pengalaman yang membawa Anda lebih dekat dengan seni meracik kopi yang
+                                sesungguhnya.
+                            </p>
+                            <p>Kami percaya bahwa kopi adalah teman sejati dalam perjalanan hidup, dan warung
+                                kami
+                                hadir untuk menemani Anda dalam setiap langkah. Entah itu pagi yang penuh
+                                semangat
+                                atau sore yang penuh refleksi, kami siap memberikan kehangatan dan semangat
+                                dalam
+                                setiap cangkir yang kami sajikan. Kami berkomitmen untuk terus memberikan
+                                pelayanan
+                                terbaik, menjaga kualitas, dan menciptakan pengalaman yang membuat Anda merasa
+                                seperti di rumah.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- component about end -->
+
+            <!-- component menu start -->
+            <section id="menu" class="menu">
+                <div class="container padding-top-75px">
+                    <div class="row text-align-center">
+                        <h2>
+                            <span class="text-color-primary">Menu</span> <span class="text-color-gray">Kami</span>
+                        </h2>
+                    </div>
+                    <div class="row text-align-center">
+                        <p>Di warung kopi kami, kami menyajikan berbagai pilihan kopi terbaik yang dapat memanjakan
+                            lidah Anda. Dari kopi hitam yang kuat hingga berbagai varian kopi dengan sentuhan manis dan
+                            lembut, kami memiliki pilihan untuk setiap selera. Selain kopi, kami juga menawarkan aneka
+                            makanan ringan yang pas untuk menemani waktu bersantai Anda. Setiap menu kami disajikan
+                            dengan penuh perhatian, menjadikan setiap kunjungan Anda lebih berkesan.</p>
+                    </div>
+                    <div class="row flex-direction-column-768 text-align-center">
+                        <div class="column-100">
+                            <div class="row">
+                                <div class="column-100">
+                                    <img src="./menu1_img.jpg">
+                                    <h3>-Latte-</h3>
+                                    <p>IDR <span class="text-color-primary">20K</span></p>
+                                </div>
+                                <div class="column-100">
+                                    <img src="./menu2_img.jpg">
+                                    <h3>-Cappuccino-</h3>
+                                    <p>IDR <span class="text-color-primary">25K</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-100">
+                            <div class="row">
+                                <div class="column-100">
+                                    <img src="./menu3_img.jpg">
+                                    <h3>-Espresso-</h3>
+                                    <p>IDR <span class="text-color-primary">15K</span></p>
+                                </div>
+                                <div class="column-100">
+                                    <img src="./menu4_img.jpg">
+                                    <h3>-Macchiato-</h3>
+                                    <p>IDR <span class="text-color-primary">18K</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row flex-direction-column-768 text-align-center">
+                        <div class="column-100">
+                            <div class="row">
+                                <div class="column-100">
+                                    <img src="./menu5_img.jpg">
+                                    <h3>-Mocha-</h3>
+                                    <p>IDR <span class="text-color-primary">22K</span></p>
+                                </div>
+                                <div class="column-100">
+                                    <img src="./menu6_img.jpg">
+                                    <h3>-Americano-</h3>
+                                    <p>IDR <span class="text-color-primary">17K</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-100">
+                            <div class="row">
+                                <div class="column-100">
+                                    <img src="./menu7_img.jpg">
+                                    <h3>-Affogato-</h3>
+                                    <p>IDR <span class="text-color-primary">30K</span></p>
+                                </div>
+                                <div class="column-100">
+                                    <img src="./menu8_img.jpg">
+                                    <h3>-Flat White-</h3>
+                                    <p>IDR <span class="text-color-primary">28K</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row flex-direction-column-768 text-align-center">
+                        <div class="column-100">
+                            <div class="row">
+                                <div class="column-100">
+                                    <img src="./menu9_img.jpg">
+                                    <h3>-Iced Latte-</h3>
+                                    <p>IDR <span class="text-color-primary">21K</span></p>
+                                </div>
+                                <div class="column-100">
+                                    <img src="./menu10_img.jpg">
+                                    <h3>-Iced Coffee-</h3>
+                                    <p>IDR <span class="text-color-primary">19K</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-100">
+                            <div class="row">
+                                <div class="column-100">
+                                    <img src="./menu11_img.jpg">
+                                    <h3>-Honney Latte-</h3>
+                                    <p>IDR <span class="text-color-primary">35K</span></p>
+                                </div>
+                                <div class="column-100">
+                                    <img src="./menu12_img.jpg">
+                                    <h3>-Turmeric Latte-</h3>
+                                    <p>IDR <span class="text-color-primary">23K</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- component menu end -->
+
+            <!-- component contact start -->
+            <!-- component contact end -->
+        </main>
+        <!-- component main end -->
+
+        <!-- component footer start -->
+        <footer class="navbar border-top-1px-primary-dark">
+            <div class="container text-align-center">
+                <span class="navbar-text">&copy; 2025 <strong><span
+                            class="font-style-italic text-color-gray">warkop</span><span
+                            class="text-color-primary">MurniPutra</span>.</strong> Semua Hak
+                    Dilindungi Undang-undang.</span>
+                <span class="navbar-text">di bikin dengan penuh cinta dan kasih sayang <strong><span
+                            class="font-style-italic text-color-gray">by</span><span
+                            class="text-color-primary">AA</span>.</strong></span>
             </div>
-        </section>
-    </main>
-    <footer class="navbar border-top-primary">
-        <div class="container padding-block-2rem text-align-center">
-            <div class="navbar-nav">
-                <a href="#home">home</a>
-                <a href="#about">tentang</a>
-                <a href="#menu">menu</a>
-                <a href="#contact">kontak</a>
-            </div>
-            <div class="navbar-extra">
-                <a><i data-feather="instagram"></i></a>
-                <a><i data-feather="twitter"></i></a>
-                <a><i data-feather="facebook"></i></a>
-            </div>
-            <p class="navbar-text">
-                di bikin dengan penuh cinta dan kasih sayang by <span class="text-primary">AA</span>
-            </p>
-        </div>
-    </footer>
+        </footer>
+        <!-- component footer end -->
+    </div>
+    <!-- component root end -->
     <!-- feather icon -->
     <script>
         feather.replace();
