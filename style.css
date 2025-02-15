@@ -62,6 +62,7 @@ p {
     width: 100%;
     display: block;
     margin-block: 1rem;
+    margin-block-start: 2rem;
 }
 
 .row h1,
