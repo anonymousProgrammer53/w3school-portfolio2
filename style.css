@@ -72,7 +72,6 @@ p {
 .row h5,
 .row h6 {
     width: 100%;
-    margin-block: 1rem;
 }
 
 .row h1 {
@@ -82,7 +81,6 @@ p {
 .row p {
     width: 100%;
     font-weight: 200;
-    margin-block: 1rem;
 }
 
 .btn-primary {
@@ -111,6 +109,10 @@ p {
 
 /* component navbar start */
 /* navbar-brand */
+.navbar {
+    background-color: var(--bg);
+}
+
 .navbar .navbar-brand {
     color: var(--white);
     display: inline-block;
@@ -160,8 +162,8 @@ p {
 /* navbar-icon */
 .navbar .nav-icon {
     cursor: pointer;
-    margin-inline: 1rem;
     display: inline-block;
+    margin-left: 0.5rem;
 }
 
 .navbar .navbar-nav .nav-icon:hover {
@@ -173,6 +175,7 @@ p {
     color: var(--white);
     cursor: pointer;
     display: none;
+    margin-left: 1rem;
 }
 
 .navbar .navbar-toggler:hover {
@@ -211,6 +214,29 @@ p {
 
 /* component hero end */
 
+/* component contact start */
+form {
+    text-align: center;
+}
+
+form .input-group {
+    display: flex;
+    background-color: var(--bg);
+    align-items: center;
+    border: 1px solid var(--white);
+    padding-inline: 2rem;
+}
+
+form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.6rem;
+    background: none;
+    color: var(--white);
+}
+
+/* component contact end */
+
 /* component utility first classes */
 .font-style-italic {
     font-style: italic;
@@ -226,6 +252,18 @@ p {
 
 .text-color-gray {
     color: var(--gray);
+}
+
+.m-block-1rem {
+    margin-block: 1rem;
+}
+
+.margin-top-75px {
+    margin-top: 7.5rem;
+}
+
+.margin-bottom-3rem {
+    margin-bottom: 3rem;
 }
 
 .padding-top-75px {
