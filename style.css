@@ -254,24 +254,16 @@ form .input-group input {
     color: var(--gray);
 }
 
-.m-block-1rem {
+.margin-block-1rem {
     margin-block: 1rem;
 }
 
-.margin-top-75px {
-    margin-top: 7.5rem;
+.padding-top-60px {
+    padding-top: 6rem;
 }
 
-.margin-bottom-3rem {
-    margin-bottom: 3rem;
-}
-
-.padding-top-75px {
-    padding-top: 7.5rem;
-}
-
-.padding-bottom-75px {
-    padding-bottom: 7.5rem;
+.padding-bottom-60px {
+    padding-bottom: 6rem;
 }
 
 .border-top-1px-primary-dark {
@@ -345,5 +337,9 @@ form .input-group input {
 
     .navbar .navbar-toggler {
         display: inline-block;
+    }
+
+    .height-240-768 {
+        height: 240px;
     }
 }
