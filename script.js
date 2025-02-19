@@ -13,4 +13,5 @@ document.addEventListener('click', (e) => {
 
 document.querySelector('#search').addEventListener('click', () => {
     document.querySelector('#search-form').classList.toggle('active');
+    document.querySelector('#search-box').focus();
 });
