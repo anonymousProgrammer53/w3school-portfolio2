@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Warkop Murni Putra</title>
+    <title>Murni Putra Coffee</title>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +27,14 @@
         <nav class="navbar navbar-top navbar-responsive border-bottom-1px-primary-dark">
             <div class="container display-flex align-items-center justify-content-between">
                 <a href="#" class="navbar-brand">
-                    <span class="font-style-italic text-color-gray">warkop</span><span
-                        class="text-color-primary">MurniPutra</span>.
+                    <span class="text-color-primary">MurniPutra</span><span
+                        class="font-style-italic text-color-gray">coffee</span>.
                 </a>
                 <div class="navbar-nav">
                     <a href="#home" class="nav-link">home</a>
                     <a href="#about" class="nav-link">tentang</a>
                     <a href="#menu" class="nav-link">menu</a>
+                    <a href="#product" class="nav-link">produk</a>
                     <a href="#contact" class="nav-link">kontak</a>
                 </div>
                 <div class="navbar-nav">
@@ -41,10 +42,17 @@
                     <span id="shopping-cart" class="nav-icon"><i data-feather="shopping-cart"></i></span>
                 </div>
                 <div id="menu-icon" class="navbar-toggler">
-                    <span class="nav-icon">
-                        <i data-feather="menu"></i>
-                    </span>
+                    <i data-feather="menu" class="nav-icon"></i>
                 </div>
+
+                <!-- component search form start -->
+                <form id="search-form" class="input-group input-group-absolute">
+                    <label for="search-box">
+                        <i data-feather="search"></i>
+                    </label>
+                    <input type="search" id="search-box" placeholder="search here...">
+                </form>
+                <!-- component search form end -->
             </div>
         </nav>
         <!-- component nav end -->
@@ -53,16 +61,18 @@
         <main>
             <!-- component home start -->
             <header id="home" class="hero">
-                <div class="container padding-top-60px padding-bottom-60px">
+                <div class="container padding-top-62-5px padding-bottom-62-5px">
                     <div class="row">
                         <div class="column-45 column-100-768">
-                            <h1 class="margin-block-1rem">Nikmati Harimu dengan Secangkir <span
+                            <h1 class="font-size-48 margin-block-1rem">Nikmati Harimu dengan Secangkir <span
                                     class="text-color-primary">Kopi</span></h1>
-                            <p class="margin-block-1rem">Kopi bukan hanya minuman, melainkan teman sejati yang menemani
-                                setiap
-                                langkah dalam perjalanan hidupmu, memberikan semangat dan kehangatan di setiap
-                                tegukannya.</p>
-                            <a href="" class="btn-primary">Nikmati sekarang!</a>
+                            <p class="margin-block-1rem"><b><span class="text-color-primary">Kopi</span> bukan hanya
+                                    minuman, melainkan teman sejati yang
+                                    menemani
+                                    setiap
+                                    langkah dalam perjalanan hidupmu, memberikan semangat dan kehangatan di setiap
+                                    tegukannya.</b></p>
+                            <button type="button" class="btn-primary">Nikmati sekarang!</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +81,7 @@
 
             <!-- component about start -->
             <section id="about" class="about">
-                <div class="container padding-top-60px padding-bottom-60px">
+                <div class="container padding-top-62-5px padding-bottom-62-5px">
                     <div class="row text-align-center">
                         <h2 class="margin-block-1rem">
                             <span class="text-color-primary">Tengtang</span> <span class="text-color-gray">Kami</span>
@@ -116,7 +126,7 @@
 
             <!-- component menu start -->
             <section id="menu" class="menu">
-                <div class="container padding-top-60px padding-bottom-60px">
+                <div class="container padding-top-62-5px padding-bottom-62-5px">
                     <div class="row text-align-center">
                         <h2>
                             <span class="text-color-primary">Menu</span> <span class="text-color-gray">Kami</span>
@@ -240,7 +250,7 @@
 
             <!-- component contact start -->
             <section id="contact" class="contact">
-                <div class="container padding-top-60px padding-bottom-60px">
+                <div class="container padding-top-62-5px padding-bottom-62-5px">
                     <div class="row text-align-center">
                         <h2>
                             <span class="text-color-primary">Kontak</span> <span class="text-color-gray">Kami</span>
@@ -263,20 +273,20 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="column-45 column-100-768">
-                            <form action="">
-                                <div class="input-group margin-block-1rem">
+                            <form action="" class="text-align-center">
+                                <div class="input-group">
                                     <i data-feather="user"></i>
                                     <input type="text" placeholder="name">
                                 </div>
-                                <div class="input-group margin-block-1rem">
+                                <div class="input-group">
                                     <i data-feather="mail"></i>
                                     <input type="text" placeholder="email">
                                 </div>
-                                <div class="input-group margin-block-1rem">
+                                <div class="input-group">
                                     <i data-feather="phone"></i>
                                     <input type="text" placeholder="no hp">
                                 </div>
-                                <button class="btn-primary margin-block-1rem">Kirim pesan</button>
+                                <button type="button" class="btn-primary margin-block-1rem">Kirim pesan</button>
                             </form>
                         </div>
                     </div>
@@ -290,8 +300,8 @@
         <footer class="navbar">
             <div class="container text-align-center border-top-1px-primary-dark">
                 <span class="navbar-text"><small>&copy; 2025 <strong><span
-                                class="font-style-italic text-color-gray">warkop</span><span
-                                class="text-color-primary">MurniPutra</span>.</strong> Semua Hak
+                                class="text-color-primary">MurniPutra</span><span
+                                class="font-style-italic text-color-gray">coffee</span>.</strong> Semua Hak
                         Dilindungi Undang-undang.</small></span>
                 <span class="navbar-text">
                     <small>di bikin dengan penuh cinta dan kasih sayang <strong><span
