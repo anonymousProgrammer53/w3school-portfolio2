@@ -1,6 +1,6 @@
 :root {
-    --primary: #b6895b;
-    --primary-dark: #8e6a44;
+    --primary: #A67B5B;
+    --primary-dark: #6F4E37;
     --bg: #1a1a1a;
     --white: #e1e1e1;
     --gray: #7e7e7e;
@@ -36,8 +36,9 @@ p {
     font-size: 1.8rem;
 }
 
+/* component global start */
 .container {
-    padding: 1.5rem 6.25%;
+    padding: 1rem 5%;
 }
 
 .row {
@@ -107,6 +108,39 @@ p {
     box-shadow: 1px 1px 2px var(--bg);
 }
 
+.input-group {
+    display: flex;
+    background-color: var(--bg);
+    align-items: center;
+    border: 1px solid var(--white);
+    padding-inline: 1rem;
+    margin-block: 1rem;
+}
+
+.input-group.input-group-absolute {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 33%;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.input-group.input-group-absolute.active {
+    transform: scaleY(1);
+}
+
+.input-group input {
+    width: 100%;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    font-size: 1.6rem;
+    background: none;
+    color: var(--white);
+}
+
+/* component global end */
+
 /* component navbar start */
 /* navbar-brand */
 .navbar {
@@ -163,7 +197,7 @@ p {
 .navbar .nav-icon {
     cursor: pointer;
     display: inline-block;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .navbar .navbar-nav .nav-icon:hover {
@@ -189,16 +223,20 @@ p {
     z-index: 9999;
 }
 
+.navbar .search-form .nav-icon {
+    color: var(--bg);
+}
+
 /* component navbar end */
 
 /* component hero start */
 .hero {
-    margin-top: 6rem;
+    margin-top: 5rem;
     min-height: 100vh;
     background-image: url('./header_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     position: relative;
 }
 
@@ -214,30 +252,11 @@ p {
 
 /* component hero end */
 
-/* component contact start */
-form {
-    text-align: center;
-}
-
-form .input-group {
-    display: flex;
-    background-color: var(--bg);
-    align-items: center;
-    border: 1px solid var(--white);
-    padding-inline: 2rem;
-}
-
-form .input-group input {
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.6rem;
-    background: none;
-    color: var(--white);
-}
-
-/* component contact end */
-
 /* component utility first classes */
+.font-size-48 {
+    font-size: 4.8rem;
+}
+
 .font-style-italic {
     font-style: italic;
 }
@@ -258,12 +277,12 @@ form .input-group input {
     margin-block: 1rem;
 }
 
-.padding-top-60px {
-    padding-top: 6rem;
+.padding-top-62-5px {
+    padding-top: 6.25rem;
 }
 
-.padding-bottom-60px {
-    padding-bottom: 6rem;
+.padding-bottom-62-5px {
+    padding-bottom: 6.25rem;
 }
 
 .border-top-1px-primary-dark {
@@ -303,13 +322,17 @@ form .input-group input {
         flex-direction: column;
     }
 
+    .input-group.input-group-absolute {
+        width: 66%
+    }
+
     .navbar-responsive .navbar-nav:first-of-type {
         display: block;
         position: absolute;
         top: 100%;
         right: -100%;
         background-color: var(--white);
-        width: 33rem;
+        width: 66%;
         height: 100vh;
         transition: 0.5s linear;
     }
